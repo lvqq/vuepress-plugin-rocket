@@ -1,4 +1,4 @@
-import Rocket from './ToTopRocket.vue'
+import Rocket from './Rocket.vue'
 
 export default ({ Vue }) => {
   Vue.component('Rocket', Rocket)
