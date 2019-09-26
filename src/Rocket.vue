@@ -1,5 +1,5 @@
 <template>
-  <div class="rocket">
+  <div class="rocket" v-if="!isMobile">
     <div @click="scrollToTop" v-if="show" :class="toTop ? 'spaceship launch' : 'spaceship'">
       <div class="spaceshipBody">
         <div class="spaceshipTop"></div>
@@ -20,6 +20,7 @@
 
 <script>
 import debounce from 'lodash.debounce'
+import { isMobile } from './utils'
 
 export default {
   props: {
@@ -35,6 +36,8 @@ export default {
     }
   },
   mounted () {
+    this.isMobile = isMobile()
+    if(this.isMobile) return console.log('mobile does not load rocket')
     this.scrollTop = this.getScrollTop()
     window.addEventListener('scroll', debounce(() => {
       this.scrollTop = this.getScrollTop()
@@ -67,9 +70,6 @@ export default {
 </script>
 
 <style lang='stylus' scoped>
-@media (max-width: 959px) 
-  .rocket 
-    display: none;
 .rocket 
   width: 150px;
   position: fixed;
