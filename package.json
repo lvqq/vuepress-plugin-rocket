@@ -1,6 +1,6 @@
 {
   "name": "vuepress-plugin-rocket",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "back to top rocket in vuepress",
   "main": "src/index.js",
   "scripts": {
