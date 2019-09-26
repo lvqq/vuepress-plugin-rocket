@@ -96,7 +96,7 @@ export default {
   animation: float 2s ease infinite alternate;
 }
 @media (max-width: 959px) {
-  .spaceship {
+  .rocket {
     display: none;
   }
 }
