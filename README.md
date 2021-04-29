@@ -15,3 +15,6 @@ plugins: [
 
 ### Demo
 - [demo](https://www.nicksonlvqq.cn)
+
+### License
+- MIT
