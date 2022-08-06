@@ -14,7 +14,7 @@ plugins: [
 ```
 
 ### Demo
-- [demo](https://www.nicksonlvqq.cn)
+- [demo](https://www.chlorine.site)
 
 ### License
 - MIT
